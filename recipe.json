@@ -1,0 +1,53 @@
+{
+ "name": "k2",
+ "title": "K2 (DFI, 1998): a Risc PC demo for the StrongARM",
+ "platform": "acorn-riscpc",
+ "doc": "A recipe: how to turn a user's own copy of the demo into a native executable. It holds no game data: the inputs are recognised by content (see $SS/tools/weave.py). The input is K2 as Acorn User's CD 6 (December 1998) has it - EVOLA/EVOLUTION/K2/ZIP, a Spark archive despite its name, copied off the CD - or the later zip with K2Patch (January 1999); only !k2 is used.",
+ "inputs": {
+  "containers": {
+   "K2.zip": "8761156c873dcb732fd1504a41a6855d49cfad42809639eb1013092b7ef602a7"
+  },
+  "formats": [
+   "spark",
+   "zip",
+   "directory"
+  ]
+ },
+ "discs": [
+  {
+   "name": "k2",
+   "title": "K2: !k2 - k2 (packed), !Run, !Help, !Sprites",
+   "known_images": [
+    "28653c7a01c597952787c5348f5fc85081c11b87a01f17dbdb2de0627b3bf954"
+   ],
+   "key_files": {
+    "!k2/!Help": "5ca1bc162cd44d0db2aa0ab654a58599a86e79cc84185be29ea06375207feefa",
+    "!k2/!Run": "56daa5a99c54d25c35b644997fc44108c98201e387e465ab5e4be4a811b935ac",
+    "!k2/!Sprites": "0035a10fb509bd5df032a07ae711bf87b1069d47cdf693eee89bfded6b12ea1c",
+    "!k2/k2": "19988ece4cea49eb4d65e02a5e599834429ba17882c5b9b2da66f02628fc8c2a"
+   },
+   "game_dirs": [
+    "!k2"
+   ]
+  }
+ ],
+ "build": [
+  "python3 -I \"$WEAVE\" extract . INPUTS",
+  "python3 -I tools/unpack.py",
+  "make -C recomp regen",
+  "make -C recomp"
+ ],
+ "output": "recomp/k2",
+ "requires": {
+  "superspider": "~/stuff/superspider, or $SUPERSPIDER (dune build): analyse, gen (--no-smc), tools/weave.py, tools/arm2.py",
+  "libroger": "~/stuff/libroger, or make ROGER=... (OS_Module 11, module filing systems, roger_config.strongarm, ColourTrans_WritePalette)",
+  "host": [
+   "python3",
+   "ocaml + dune",
+   "gcc",
+   "SDL3 (pkg-config sdl3)",
+   "stb_image (Debian: libstb-dev), for libroger"
+  ]
+ },
+ "run": "cd recomp && ./k2"
+}

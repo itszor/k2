@@ -1,0 +1,28 @@
+# Python / editors
+__pycache__/
+*.pyc
+*.swp
+
+# The original archive and everything made from it: build.sh (recipe.json)
+# remakes them from the user's own copy.
+K2
+*.zip
+extracted/
+game/
+unpacked/
+analysis/*.json
+
+# Recompilation: generated C, objects, binary, run outputs
+recomp/gen*/
+recomp/*.o
+recomp/k2
+recomp/*.events
+recomp/*.vdu
+recomp/*.screen
+recomp/*.regs
+recomp/*.bmp
+recomp/*.png
+recomp/*.wav
+recomp/*.log
+recomp/*.out
+recomp/savedata/

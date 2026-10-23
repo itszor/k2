@@ -1,0 +1,9 @@
+&182345c	# gap entry, from pc=&1823ae0 LR=&4180c9f7
+&1823460	# gap entry, from pc=&1823ae0 LR=&4180c9f7
+&182349c	# gap entry, from pc=&182345c LR=&4180c9f7
+&18234a0	# gap entry, from pc=&1823440 LR=&818234a3
+&18234a8	# gap entry, from pc=&18234a0 LR=&818234a3
+&18234d0	# gap entry, from pc=&1823460 LR=&4180c9f7
+&18234d4	# gap entry, from pc=&1823440 LR=&818234d7
+&18234dc	# gap entry, from pc=&18234d4 LR=&818234d7
+&1823858	# gap entry, from pc=&1823ae0 LR=&6180ca2b

@@ -1,0 +1,14 @@
+&1b5d20	# gap entry, from pc=&1b61e0 LR=&80000000
+&1b5d58	# gap entry, from pc=&1b5d28 LR=&0
+&1b5f94	# gap entry, from pc=&1b614c LR=&207e2c
+&1b5fac	# gap entry, from pc=&1b614c LR=&207e1c
+&1b5ffc	# gap entry, from pc=&1b5d08 LR=&0
+&1b6018	# gap entry, from pc=&1b5d08 LR=&8
+&1b6120	# gap entry, from pc=&1b61f4 LR=&207d5c
+&1b6140	# gap entry, from pc=&1b5d08 LR=&0
+&1b6150	# gap entry, from pc=&1b6014 LR=&1f6658
+&1b6164	# gap entry, from pc=&1b611c LR=&80000000
+&1b61e4	# gap entry, from pc=&1b5d08 LR=&4
+&1b5fc8	# gap entry, from pc=&1b5fc4 LR=&207d3c
+&1b60a0	# gap entry, from pc=&1b609c LR=&80000000
+&1b5fe4	# gap entry, from pc=&1b5fe0 LR=&207d7c
