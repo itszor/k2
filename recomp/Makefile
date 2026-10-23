@@ -12,7 +12,7 @@ MODS    := 1:timplayer:1800000 2:shonkfs:1830000 3:autovcache:1840000
 GEN     := $(wildcard gen/code*.c) gen/entries.c
 GENMOD  := $(foreach n,1 2 3,$(wildcard genmod$(n)/code*.c) genmod$(n)/entries.c)
 OBJ     := $(GEN:.c=.o) $(GENMOD:.c=.o) game.o
-LIBS    := $(shell pkg-config --libs sdl3) -lm -lpthread
+LIBS    := $(shell pkg-config --libs sdl3) -ljpeg -lm -lpthread
 INC     := -I$(ROGER)/include
 
 k2: $(OBJ) $(ROGER)/libroger.a
